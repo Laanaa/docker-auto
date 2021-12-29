@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   php-apache-environment:
-    image: muzakidian/uas-kompwan
+    image: 1941720055/uas-kompwan
     container_name: php-apache
     depends_on:
       - db
@@ -17,7 +17,7 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: laanaaa
       MYSQL_DATABASE: biobook
     ports:
       - "3306:3306"
