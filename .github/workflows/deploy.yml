@@ -124,9 +124,9 @@ jobs:
           key: ${{secrets.OCI_KEY_FILE}}
           script: |
             sudo dnf install git -y
-            sudo git clone https://github.com/muzakidian/biobook.git
-            sudo cp -R ~/biobook/php ~/php
-            sudo rm -r biobook
+            sudo git https://github.com/Laanaa/docker-auto.git
+            sudo cp -R ~/docker-auto/php ~/php
+            sudo rm -r docker-auto
             sudo yum install -y yum-utils
             sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
             sudo yum install -y docker-ce docker-ce-cli containerd.io
