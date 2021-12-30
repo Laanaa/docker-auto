@@ -17,7 +17,7 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: laanaaa
+      MYSQL_ROOT_PASSWORD: @Neval156357n
       MYSQL_DATABASE: biobook
     ports:
       - "3306:3306"
